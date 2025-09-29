@@ -1,10 +1,18 @@
-import { Button } from "@/components/ui/button";
-
+import Navbar from "@/components/hero/Navbar";
+import HeroImage from "@/components/hero/Hero";
+import Categories from "@/components/categories/Categories";
+import SearchBar from "@/components/searchBar/SearchBar";
+import Products from "@/components/products/Products";
+import Footer from "@/components/footer/Footer";
 export default function Home() {
   return (
-    <div className="font-sans grid grid-rows-[20px_1fr_20px] items-center justify-items-center min-h-screen p-8 pb-20 gap-16 sm:p-20">
-     <h1>hello tis is my first page</h1>
-     <Button className="hover:bg-red-500 hover:cursor-pointer">ShadCn button</Button>
+    <div>
+      <Navbar />
+      <HeroImage />
+      <Categories />
+      <SearchBar />
+      <Products />
+      <Footer />
     </div>
   );
 }
